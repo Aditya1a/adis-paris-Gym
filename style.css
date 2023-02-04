@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    border-bottom: 1px solid gray;
+    align-items: center;
+    font-family: 'Itim', cursive;
+
+}
+
+.logo img{
+    width: 75px;
+}
+
+.listitm{
+    display: flex;
+}
+
+.listitm li{
+    list-style: none;
+    padding: 20px;
+}
+
+.listitm li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.listitm li a:hover{
+    color: rgb(228, 66, 66);
+    font-weight: 700;
+}
+
+.btn {
+    padding: 3px 15px;
+    margin: 0 10px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(255, 121, 121);
+    color: #fff;
+}
+/* .home{
+    /* background-image: url(bg0.jpg); */
+    
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    opacity: 0.7;
+}
+.home::before{
+    content: "";
+    background-image: url(bg0.jpg);
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    opacity: 0.7;
+    height: 100vh;
+} */
+
+.home{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    font-size: 35px;
+}
+
+.home::before{
+    content: "";
+    background-image: url(bg0.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    /* opacity: 0.8; */
+}
+
+.homebtn {
+    margin: 16px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.gallary{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    margin: 20px;
+}
+
+.gal1{
+    border: 1px solid lightcoral;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(gl3.avif);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.gal2{
+    border: 1px solid lightcoral;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(gl2.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.gal3{
+    border: 1px solid lightcoral;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(gl1.webp);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+
+.shop{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 39vh;
+}
+
+.shop img{
+    width: 350px;
+}
+
+.about{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    /* font-family: 'Itim', cursive; */
+    font-size: 35px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about::before{
+    content: "";
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.contect{
+    border: 2px solid black;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: rgb(111, 108, 108);
+}
+
+.contect h1{
+    color: #fff;
+    font-family: 'Itim', cursive;
+    font-size: 45px;
+    margin: 20px;
+}
+
+.contect a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.contect span{
+    margin: 14px;
+    font-size: 20px;
+}
+
+/* our media  */
+@media (min-width:390px) and (max-width:500px){
+    .navbar{
+        flex-direction: column;
+    }
+    .listitm li a{
+        font-size: 10px;
+    }
+    .btn {
+        display: none;
+    }
+
+    .home {
+        height: 51vh;
+        font-size: 18px;
+    }
+    .home::before {
+        height: 40%;
+        width: 100%;
+        top: 139px;
+    }
+    .gallary {
+        flex-direction: column;
+        height: 100vh;
+        margin: 15px;
+    }
+
+    .gal1,.gal2,.gal3 {
+        height: 215px;
+    }
+    .shop {
+        height: 53vh;
+        flex-direction: column;
+    }
+  
+    
+}
+
+@media (min-width:370px)  and (max-width:500px){
+    .navbar{
+        flex-direction: column;
+    }
+    .listitm li a{
+        font-size: 10px;
+    }
+    .btn {
+        display: none;
+    }
+
+    .home {
+        height: 51vh;
+        font-size: 18px;
+    }
+    .home::before {
+        height: 40%;
+        width: 100%;
+        top: 139px;
+    }
+    .gallary {
+        flex-direction: column;
+        height: 100vh;
+        margin: 15px;
+    }
+
+    .gal1,.gal2,.gal3 {
+        height: 215px;
+    }
+    .shop {
+        height: 53vh;
+        flex-direction: column;
+    }
+  
+    
+}
